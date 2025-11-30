@@ -43,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".states/taskone/merge.sol": "Merge"
+			"taskone/merge.sol": "Merge"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -57,7 +57,7 @@
 		"remappings": []
 	},
 	"sources": {
-		".states/taskone/merge.sol": {
+		"taskone/merge.sol": {
 			"keccak256": "0x0a79568d213636fcad15bcd13f8e960eba7031498d14d882b6cc5da3a3981b5b",
 			"license": "MIT",
 			"urls": [
