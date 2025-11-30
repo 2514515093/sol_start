@@ -1,0 +1,444 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name_",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "symbol_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "approved",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "ApprovalForAll",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getApproved",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					}
+				],
+				"name": "isApprovedForAll",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "tokenURI_",
+						"type": "string"
+					}
+				],
+				"name": "mintNFT",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "ownerOf",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeTransferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "approved",
+						"type": "bool"
+					}
+				],
+				"name": "setApprovalForAll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenURI",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"mintNFT(address,string)": {
+					"details": "tokenId auto-incremented by contract."
+				}
+			},
+			"title": "A minimal ERC-721 implementation (no OZ), with metadata and safe transfers",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"approve(address,uint256)": {
+					"notice": "Approve address to transfer the given tokenId"
+				},
+				"mintNFT(address,string)": {
+					"notice": "Mint a new NFT to `recipient` with `tokenURI_`. Returns tokenId."
+				},
+				"safeTransferFrom(address,address,uint256)": {
+					"notice": "Safe transfer without data"
+				},
+				"safeTransferFrom(address,address,uint256,bytes)": {
+					"notice": "Safe transfer with data"
+				},
+				"setApprovalForAll(address,bool)": {
+					"notice": "Set/Unset operator approval"
+				},
+				"supportsInterface(bytes4)": {
+					"notice": "Query if a contract implements an interface"
+				},
+				"tokenURI(uint256)": {
+					"notice": "Return tokenURI for a tokenId, revert if not exists"
+				}
+			},
+			"notice": "Single-file ERC721 compatible contract. Minting is public (anyone can mint).",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tasktwo/gpterc721.sol": "MyERC721"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"tasktwo/gpterc721.sol": {
+			"keccak256": "0x4e970a83f7b4303e8bf1590c328f76f106d775a16d2bf58e9caec157b3f74f1d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d120554d25c2c296f72488c3fc7f3253f609156f4c35dcf5f2b43794176541ac",
+				"dweb:/ipfs/QmQKdXZDVhWn153ScAYPuEJ3d822HYK4Zeb2jfVThPnn3X"
+			]
+		}
+	},
+	"version": 1
+}

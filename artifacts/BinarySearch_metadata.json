@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					}
+				],
+				"name": "binarySearch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "arr",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "target",
+						"type": "uint256"
+					}
+				],
+				"name": "binarySearcht",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".states/taskone/binarySearch.sol": "BinarySearch"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".states/taskone/binarySearch.sol": {
+			"keccak256": "0x485c6589814d6f841170ed71853f24c6efbafe58602b1173c32d7c40c95e8415",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://83c3d1be6b8641c5a67ef12c9d6827d98863975f3e4182870d05b4c23763f843",
+				"dweb:/ipfs/QmdhyaRvseyBuNaDyxa8B6c6AHGnFkVanZzfxfvXe4jFqG"
+			]
+		}
+	},
+	"version": 1
+}

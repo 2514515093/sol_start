@@ -1,0 +1,334 @@
+{
+	"id": "3cdb508618d765bf3b1a9559772d126a",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.30",
+	"solcLongVersion": "0.8.30+commit.73712a01",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"tasktwo/erc721.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ncontract erc721{\r\n\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"contracts": {
+			"tasktwo/erc721.sol": {
+				"erc721": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"tasktwo/erc721.sol\":60:83  contract erc721{... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  revert(0x00, 0x00)\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"tasktwo/erc721.sol\":60:83  contract erc721{... */\n      mstore(0x40, 0x80)\n      revert(0x00, 0x00)\n\n    auxdata: 0xa26469706673582212209d15a29476a37133c4b81d54e90a5a1959fcddf0557f49235d1a4f6c356f82e364736f6c634300081e0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600e575f5ffd5b50603e80601a5f395ff3fe60806040525f5ffdfea26469706673582212209d15a29476a37133c4b81d54e90a5a1959fcddf0557f49235d1a4f6c356f82e364736f6c634300081e0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xE JUMPI PUSH0 PUSH0 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1A PUSH0 CODECOPY PUSH0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP14 ISZERO LOG2 SWAP5 PUSH23 0xA37133C4B81D54E90A5A1959FCDDF0557F49235D1A4F6C CALLDATALOAD PUSH16 0x82E364736F6C634300081E0033000000 ",
+							"sourceMap": "60:23:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "60806040525f5ffdfea26469706673582212209d15a29476a37133c4b81d54e90a5a1959fcddf0557f49235d1a4f6c356f82e364736f6c634300081e0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH0 PUSH0 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP14 ISZERO LOG2 SWAP5 PUSH23 0xA37133C4B81D54E90A5A1959FCDDF0557F49235D1A4F6C CALLDATALOAD PUSH16 0x82E364736F6C634300081E0033000000 ",
+							"sourceMap": "60:23:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12400",
+								"executionCost": "64",
+								"totalCost": "12464"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 60,
+									"end": 83,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212209d15a29476a37133c4b81d54e90a5a1959fcddf0557f49235d1a4f6c356f82e364736f6c634300081e0033",
+									".code": [
+										{
+											"begin": 60,
+											"end": 83,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 60,
+											"end": 83,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 60,
+											"end": 83,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 60,
+											"end": 83,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 60,
+											"end": 83,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 60,
+											"end": 83,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"tasktwo/erc721.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"tasktwo/erc721.sol\":\"erc721\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"tasktwo/erc721.sol\":{\"keccak256\":\"0xe62fd09e0a9d66b45429af27d2ae96fe653eb10110cc8fedca90ec3481d3bbb0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://988f9e3021e5a280ed364a1be6bf6960847d5b3a8f4d4af75c57bbe465dc34f3\",\"dweb:/ipfs/QmTs4Wq87mUzgkqSQinjP9naCWstnckh5cM9MLcHVz7RTU\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"tasktwo/erc721.sol": {
+				"ast": {
+					"absolutePath": "tasktwo/erc721.sol",
+					"exportedSymbols": {
+						"erc721": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "erc721",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "erc721",
+							"nameLocation": "69:6:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "60:23:0",
+							"usedErrors": [],
+							"usedEvents": []
+						}
+					],
+					"src": "33:50:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "numo",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "numt",
+						"type": "uint256[]"
+					}
+				],
+				"name": "merge",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".states/taskone/merge.sol": "Merge"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".states/taskone/merge.sol": {
+			"keccak256": "0x0a79568d213636fcad15bcd13f8e960eba7031498d14d882b6cc5da3a3981b5b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0cd9997dcdb41a9d82cd18a9330e930d42ee8388c2268502bb5fe5eb1026da3a",
+				"dweb:/ipfs/Qma11usDumuf6aaJt585W2S9w4jhRp6WbgHH248TMKdPjS"
+			]
+		}
+	},
+	"version": 1
+}

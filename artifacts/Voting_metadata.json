@@ -1,0 +1,129 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "candidates",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "user",
+						"type": "string"
+					}
+				],
+				"name": "getVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "resetVotes",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "user",
+						"type": "string"
+					}
+				],
+				"name": "usernums",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "user",
+						"type": "string"
+					}
+				],
+				"name": "vote",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"taskone.sol": "Voting"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"taskone.sol": {
+			"keccak256": "0xabc1de4de6dc21c70e3369fd43653eae90f3ca777a2bafe55b489cabd1273f96",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8c52bf99d8a122c13e4931d29da2f3473789c702ef2e40c73a5e3d083666ac8a",
+				"dweb:/ipfs/QmTp52bccGGTjnyeoTNXTCogaxyFL8uUCZkHhqLhQgzciq"
+			]
+		}
+	},
+	"version": 1
+}
